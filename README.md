@@ -37,8 +37,8 @@ the last sentence out, though, I'm leaning towards "this is smoother and I
 like it more, so it's cool."
 
 * I have no idea how I'd improve this (e.g. I don't like sinon's way any
-better) but I want all by tests to end with an assertion (in my case chai's
-`expect`). When I'm calling `verify` I wish I could hook that up to
+better) but I want all my tests to end with an assertion (in my case chai's
+`expect`). When I'm calling `verify` I wish I could hook that up to real
 assertions in a way that wasn't too clunky.
 
 ### Stuff I didn't try
@@ -73,3 +73,8 @@ Error: Unsatisfied verification on test double.
 
 Is the "undefined" supposed to be "bob"? It is very possible that I
 misunderstood the docs and this is expected.
+
+
+### Verdict
+I like it! Next time I start up a larger project I will try to grab
+testdouble.js instead of my usual sinon and see how it goes :)
