@@ -7,7 +7,7 @@ wedding registry.
 
 
 ## Features
-* A user can have their own wishlist, to which they can add remove items.
+* A user can have their own wishlist, to which they can add and remove items.
 
 * An item in another user's wishlist can be "dibsed" to denote that the dibsing
 user intends to buy it. The wishlist owner can't tell who dibsed their items.
