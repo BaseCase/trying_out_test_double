@@ -24,6 +24,8 @@ or no to the request to reveal who they are.
 * I like that it's minimal. Sinon is what I typically use for JS test doubles,
 but I almost never need the whole kitchen sink.
 * Auto-stubbing all methods on a class is rad.
+* The `when` (especially if I'd imported it as a top-level function instead of
+leaving it on `td`) chaining goes down nice and smooth.
 
 ### Eh stuff
 * I wasn't initially 100% sold on actually *calling* the double inside
@@ -33,6 +35,11 @@ signature looks, and I like that it means I only have to pass one arg to
 other test libs already so the inconsistency is sort of weird. After typing
 the last sentence out, though, I'm leaning towards "this is smoother and I
 like it more, so it's cool."
+
+* I have no idea how I'd improve this (e.g. I don't like sinon's way any
+better) but I want all by tests to end with an assertion (in my case chai's
+`expect`). When I'm calling `verify` I wish I could hook that up to
+assertions in a way that wasn't too clunky.
 
 ### Stuff I didn't try
 * Stubbing with different responses to specific args
