@@ -39,14 +39,23 @@ like it more, so it's cool."
 * I have no idea how I'd improve this (e.g. I don't like sinon's way any
 better) but I want all my tests to end with an assertion (in my case chai's
 `expect`). When I'm calling `verify` I wish I could hook that up to real
-assertions in a way that wasn't too clunky.
+assertions in a way that wasn't too clunky. *(**UPDATE**: As @jasonkarns points out
+in [#1], `sinon-chai` is the way you get nice assertions on sinon doubles, so an
+equivalent (separate) library would make sense for testdouble. I may look into
+this :) )*
 
 ### Stuff I didn't try
 * Stubbing with different responses to specific args
 * built-in or custom matchers
 
-### possible bug?
-The docs say I should be able to name my td objects and get that name back in error messages, but when I do
+### possible bug? (nope!)
+*(UPDATE: Per a Twitter convo, this is not a bug. The `verify` function prints
+the name of the double being verified, not its argument. I open [an
+issue](https://github.com/testdouble/testdouble.js/issues/21) to discuss a
+possible improvement there.)*
+
+The docs say I should be able to name my td objects and get that name back in
+error messages, but when I do
 
 ```javascript
 var bob = td.create('bob');
